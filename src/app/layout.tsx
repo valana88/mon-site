@@ -39,7 +39,6 @@ export default function RootLayout({
           <TopBar>
             <NavContainer>
               <IconSymbioseLinkContainer href="/">
-                {/* <ResearthLogoLayout /> */}
                 <Djeeling>DJEELING</Djeeling>
               </IconSymbioseLinkContainer>
             </NavContainer>
