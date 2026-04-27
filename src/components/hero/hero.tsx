@@ -6,6 +6,7 @@ import {
   Subtitle,
   Buttons,
   BtnSecondary,
+  BtnPrimary,
 } from "./hero.styles";
 
 export default function Hero() {
