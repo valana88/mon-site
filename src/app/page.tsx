@@ -6,13 +6,11 @@ import WhySerbia from "@/components/whySyberia/whySyberia";
 
 export default function Home() {
   return (
-    // <main>
     <Back>
       <About />
       <WhySerbia />
       {/* <Distinction /> */}
       <Contact />
     </Back>
-    // </main>
   );
 }

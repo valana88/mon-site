@@ -13,7 +13,7 @@ export const Grid = styled.div`
   justify-content: space-evenly;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 12px;
-  /* margin: 1.5rem 0; */
+  margin-top: 1.25rem;
   border: 4px solid orange;
 `;
 

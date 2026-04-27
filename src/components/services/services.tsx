@@ -19,7 +19,7 @@ const services = [
     desc: "De l'immatriculation APR à l'ouverture de compte bancaire, clé en main.",
   },
   {
-    title: "L'nstallation personnelle en Serbie",
+    title: "L'Installation personnelle en Serbie",
     desc: "Résidence temporaire, logement, banque, assurance — accompagnement de bout en bout.",
   },
   {

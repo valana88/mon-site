@@ -3,13 +3,16 @@ import styled from "styled-components";
 export const Back = styled.div`
   /* display: flex;
   flex-direction: column; */
-  margin: 5rem;
+  /* margin: 5rem; */
+  margin: 5rem 12vw;
 `;
 
 export const PresentationBack = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  /* margin-top: 2.5rem; */
+  /* margin: 0 12vw; */
 `;
 
 export const ServicesContainer = styled.div`
@@ -25,7 +28,6 @@ export const Inner = styled.div`
 
 export const SectionLabel = styled.p`
   display: flex;
-  /* justify-content: center; */
   font-size: 17px;
   font-weight: 600;
   text-transform: uppercase;
@@ -46,23 +48,28 @@ export const PageTitle = styled.h1`
   line-height: 1.2;
 `;
 
-export const PresentationContainer = styled.div`
-  font-size: 17px;
-  color: var(--text-muted);
+export const PresentationContainer = styled.p`
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  font-size: 23px;
   line-height: 1.75;
-  max-width: 600px;
   border: 3px solid black;
-  padding: 1rem;
+  padding: 1.25rem;
+  margin: 2.5rem 0;
+  color: white;
+  background-color: #130189;
+  /* color: var(--text-muted); */
 
   strong {
-    color: var(--text);
-    font-weight: 500;
+    /* color: var(--text); */
+    font-weight: 600;
+    color: #ffbb00;
   }
 `;
 
 export const Weight = styled.span`
   font-weight: 600;
-  font-size: 17px;
 `;
 
 export const Divider = styled.hr`
@@ -100,19 +107,18 @@ export const ServiceText = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4px;
+  font-size: 17px;
 `;
 
 export const ServiceTitle = styled.p`
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--text);
+  font-size: 17px;
+  font-weight: 600;
   line-height: 1.4;
 `;
 
 export const ServiceDesc = styled.p`
-  font-size: 14px;
-  color: var(--text-muted);
-  line-height: 1.6;
+  font-size: 16px;
+  /* line-height: 1.5; */
 `;
 
 export const StatsGrid = styled.div`

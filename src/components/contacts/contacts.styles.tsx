@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   border: 4px solid green;
-  padding: 2.5rem 2rem;
-  /* max-width: var(--max-width);
-  margin: 0 auto; */
+  margin: 2.5rem 0;
+  padding: 1.25rem;
 `;
 
 export const Label = styled.p`
-  font-size: 12px;
+  font-size: 17px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -26,13 +25,15 @@ export const Title = styled.h2`
 
 export const Sub = styled.p`
   font-size: 15px;
-  color: var(--text-muted);
+  /* color: var(--text-muted); */
   margin-bottom: 2rem;
   line-height: 1.6;
 `;
 
 export const InfoList = styled.div`
   display: flex;
+  font-size: 17px;
+
   flex-direction: column;
   gap: 10px;
   margin-bottom: 2rem;
