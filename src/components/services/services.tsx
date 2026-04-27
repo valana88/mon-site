@@ -1,49 +1,58 @@
 import {
-  ServicesContainer,
-  SectionLabel,
-  ServicesList,
-  ServiceItem,
-  ServiceArrow,
-  ServiceText,
+  ServicesSection,
+  ServicesInner,
+  ServicesHeader,
+  ServicesEyebrow,
+  ServicesTitle,
+  ServicesGrid,
+  ServiceCard,
+  ServiceNum,
   ServiceTitle,
   ServiceDesc,
-} from "../about/about.styles";
+} from "./services.styles";
 
 const services = [
   {
-    title: "La domiciliation commerciale à Belgrade",
-    desc: "Adresse centre-ville, gestion courrier, permanence téléphonique.",
+    num: "01",
+    title: "Domiciliation à Belgrade",
+    desc: "Adresse dans le centre-ville historique, gestion du courrier, permanence téléphonique.",
   },
   {
-    title: "La création de D.O.O (structure juridique serbe)",
-    desc: "De l'immatriculation APR à l'ouverture de compte bancaire, clé en main.",
+    num: "02",
+    title: "Création de D.O.O",
+    desc: "Structure juridique serbe — de l'immatriculation APR à l'ouverture du compte bancaire, clé en main.",
   },
   {
-    title: "L'Installation personnelle en Serbie",
+    num: "03",
+    title: "Installation personnelle",
     desc: "Résidence temporaire, logement, banque, assurance — accompagnement de bout en bout.",
   },
   {
-    title: "Le suivi mensuel & mise en relation",
-    desc: "Accès à mon réseau d'avocats, comptables et notaires locaux anglophones.",
+    num: "04",
+    title: "Suivi & réseau local",
+    desc: "Accès à mon réseau d'avocats, comptables et notaires serbes anglophones, suivi mensuel.",
   },
 ];
 
-export default function About() {
+export default function Services() {
   return (
-    <ServicesContainer>
-      <SectionLabel>Djeeling Group vous accompagne dans :</SectionLabel>
+    <ServicesSection id="services">
+      <ServicesInner>
+        <ServicesHeader>
+          <ServicesEyebrow>Services</ServicesEyebrow>
+          <ServicesTitle>Nous vous accompagnons, de A à Z</ServicesTitle>
+        </ServicesHeader>
 
-      <ServicesList>
-        {services.map((s) => (
-          <ServiceItem key={s.title}>
-            <ServiceArrow>→</ServiceArrow>
-            <ServiceText>
+        <ServicesGrid>
+          {services.map((s) => (
+            <ServiceCard key={s.num}>
+              <ServiceNum>{s.num}</ServiceNum>
               <ServiceTitle>{s.title}</ServiceTitle>
               <ServiceDesc>{s.desc}</ServiceDesc>
-            </ServiceText>
-          </ServiceItem>
-        ))}
-      </ServicesList>
-    </ServicesContainer>
+            </ServiceCard>
+          ))}
+        </ServicesGrid>
+      </ServicesInner>
+    </ServicesSection>
   );
 }

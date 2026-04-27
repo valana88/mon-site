@@ -1,32 +1,50 @@
-import { SectionCenterLabel } from "../about/about.styles";
 import {
-  Grid,
-  Note,
-  SectionWhySerbia,
-  StatCard,
-  StatLabel,
-  stats,
+  WhySection,
+  WhyInner,
+  WhyEyebrow,
+  WhyTitle,
+  WhyTitleAccent,
+  WhyLead,
+  StatsBand,
+  StatItem,
   StatVal,
+  StatValSuffix,
+  StatItemLabel,
 } from "./whySiberia.styles";
+
+const stats = [
+  { val: "10", suffix: "%", label: "Flat tax sur revenus" },
+  { val: "0", suffix: "%", label: "Wealth tax" },
+  { val: "−40", suffix: "%", label: "Coût de vie vs France" },
+  { val: "UE", suffix: "", label: "Candidate officielle" },
+];
 
 export default function WhySerbia() {
   return (
-    <SectionWhySerbia>
-      <SectionCenterLabel>Pourquoi la Serbie ?</SectionCenterLabel>
+    <WhySection id="serbia">
+      <WhyInner>
+        <WhyEyebrow>La Serbie, en bref</WhyEyebrow>
+        <WhyTitle>
+          Un environnement fiscal{" "}
+          <WhyTitleAccent>parmi les plus favorables</WhyTitleAccent> d'Europe.
+        </WhyTitle>
+        <WhyLead>
+          Encore peu exploité par les francophones — un marché en pleine
+          croissance, candidate officielle à Union européenne.
+        </WhyLead>
+      </WhyInner>
 
-      <Note>
-        {/* Candidate officielle à l'UE.  */}
-        Un environnement fiscal parmi les plus favorables d'Europe.
-      </Note>
-
-      <Grid>
+      <StatsBand>
         {stats.map((s) => (
-          <StatCard key={s.label}>
-            <StatVal>{s.val}</StatVal>
-            <StatLabel>{s.label}</StatLabel>
-          </StatCard>
+          <StatItem key={s.label}>
+            <StatVal>
+              {s.val}
+              {s.suffix && <StatValSuffix>{s.suffix}</StatValSuffix>}
+            </StatVal>
+            <StatItemLabel>{s.label}</StatItemLabel>
+          </StatItem>
         ))}
-      </Grid>
-    </SectionWhySerbia>
+      </StatsBand>
+    </WhySection>
   );
 }
