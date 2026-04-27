@@ -1,44 +1,49 @@
 import {
-  Arrow,
-  Item,
-  ItemDesc,
-  ItemText,
-  ItemTitle,
-  Label,
-  List,
-  Section,
-} from "./services.styles";
+  ServicesContainer,
+  SectionLabel,
+  ServicesList,
+  ServiceItem,
+  ServiceArrow,
+  ServiceText,
+  ServiceTitle,
+  ServiceDesc,
+} from "../about/about.styles";
 
 const services = [
   {
-    title: "Domiciliation à Belgrade",
-    desc: "Adresse professionnelle dans le centre historique de Belgrade pour votre société.",
+    title: "La domiciliation commerciale à Belgrade",
+    desc: "Adresse centre-ville, gestion courrier, permanence téléphonique.",
   },
   {
-    title: "Création de D.O.O (SARL serbe)",
-    desc: "Constitution de votre structure juridique serbe de A à Z — statuts, immatriculation, compte bancaire.",
+    title: "La création de D.O.O (structure juridique serbe)",
+    desc: "De l'immatriculation APR à l'ouverture de compte bancaire, clé en main.",
   },
   {
-    title: "Installation personnelle",
-    desc: "Accompagnement résidence, ouverture de compte, intégration dans le réseau local francophone.",
+    title: "L'nstallation personnelle en Serbie",
+    desc: "Résidence temporaire, logement, banque, assurance — accompagnement de bout en bout.",
+  },
+  {
+    title: "Le suivi mensuel & mise en relation",
+    desc: "Accès à mon réseau d'avocats, comptables et notaires locaux anglophones.",
   },
 ];
 
-export default function Services() {
+export default function About() {
   return (
-    <Section>
-      <Label>Ce que j'accompagne</Label>
-      <List>
+    <ServicesContainer>
+      <SectionLabel>Djeeling Group vous accompagne dans :</SectionLabel>
+
+      <ServicesList>
         {services.map((s) => (
-          <Item key={s.title}>
-            <Arrow>→</Arrow>
-            <ItemText>
-              <ItemTitle>{s.title}</ItemTitle>
-              <ItemDesc>{s.desc}</ItemDesc>
-            </ItemText>
-          </Item>
+          <ServiceItem key={s.title}>
+            <ServiceArrow>→</ServiceArrow>
+            <ServiceText>
+              <ServiceTitle>{s.title}</ServiceTitle>
+              <ServiceDesc>{s.desc}</ServiceDesc>
+            </ServiceText>
+          </ServiceItem>
         ))}
-      </List>
-    </Section>
+      </ServicesList>
+    </ServicesContainer>
   );
 }

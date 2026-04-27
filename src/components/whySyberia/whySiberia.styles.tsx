@@ -1,28 +1,20 @@
 import styled from "styled-components";
 
-export const Section = styled.section`
-  padding: 5rem 2rem;
-  background: var(--bg-secondary);
-`;
-export const Inner = styled.div`
-  max-width: var(--max-width);
-  margin: 0 auto;
-`;
-
-export const Label = styled.p`
-  font-size: 12px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--text-muted);
-  margin-bottom: 1rem;
+export const SectionWhySerbia = styled.section`
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-top: 2.5rem;
 `;
 
 export const Grid = styled.div`
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 12px;
-  margin: 1.5rem 0;
+  /* margin: 1.5rem 0; */
+  border: 4px solid orange;
 `;
 
 export const StatCard = styled.div`
@@ -47,12 +39,15 @@ export const StatLabel = styled.div`
 `;
 
 export const Note = styled.p`
-  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
   color: var(--text-muted);
   line-height: 1.7;
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 0.5px solid var(--border);
+  /* margin-top: 1rem; */
+  /* padding-top: 1rem; */
+  border: 2px solid black;
+  /* border-top: 0.5px solid var(--border); */
 `;
 
 export const stats = [

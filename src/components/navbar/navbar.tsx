@@ -1,10 +1,21 @@
-import { CtaLink, Logo, Nav } from "./navabar.styles";
+import {
+  Djeeling,
+  IconSymbioseLinkContainer,
+  Nav,
+  NavContainer,
+  TopBar,
+} from "./navabar.styles";
 
 export default function Navbar() {
   return (
-    <Nav>
-      <Logo href="/">Djeeling</Logo>
-      <CtaLink href="#contact">Prendre contact</CtaLink>
-    </Nav>
+    <TopBar>
+      {/* <Logo href="/">Djeeling</Logo>
+      <CtaLink href="#contact">Prendre contact</CtaLink> */}
+      <NavContainer>
+        <IconSymbioseLinkContainer href="/">
+          <Djeeling>DJEELING GROUP</Djeeling>
+        </IconSymbioseLinkContainer>
+      </NavContainer>
+    </TopBar>
   );
 }

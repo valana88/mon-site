@@ -1,9 +1,20 @@
 import styled from "styled-components";
 
-export const PageWrapper = styled.main`
-  padding-top: 80px;
-  padding-bottom: 6rem;
-  background: var(--bg);
+export const Back = styled.div`
+  /* display: flex;
+  flex-direction: column; */
+  margin: 5rem;
+`;
+
+export const PresentationBack = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const ServicesContainer = styled.div`
+  border: 4px solid blue;
+  padding: 1rem;
 `;
 
 export const Inner = styled.div`
@@ -13,12 +24,17 @@ export const Inner = styled.div`
 `;
 
 export const SectionLabel = styled.p`
-  font-size: 12px;
-  font-weight: 500;
+  display: flex;
+  /* justify-content: center; */
+  font-size: 17px;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-muted);
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+`;
+
+export const SectionCenterLabel = styled(SectionLabel)`
+  justify-content: center;
 `;
 
 export const PageTitle = styled.h1`
@@ -30,16 +46,23 @@ export const PageTitle = styled.h1`
   line-height: 1.2;
 `;
 
-export const Intro = styled.p`
+export const PresentationContainer = styled.div`
   font-size: 17px;
   color: var(--text-muted);
   line-height: 1.75;
   max-width: 600px;
+  border: 3px solid black;
+  padding: 1rem;
 
   strong {
     color: var(--text);
     font-weight: 500;
   }
+`;
+
+export const Weight = styled.span`
+  font-weight: 600;
+  font-size: 17px;
 `;
 
 export const Divider = styled.hr`

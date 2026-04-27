@@ -1,3 +1,4 @@
+import { SectionCenterLabel } from "../about/about.styles";
 import {
   BtnPrimary,
   BtnSecondary,
@@ -15,10 +16,10 @@ import {
 export default function Contact() {
   return (
     <Section id="contact">
-      <Label>Contact</Label>
+      <SectionCenterLabel>Nous contacter</SectionCenterLabel>
       <Title>Vous envisagez une implantation en Serbie ?</Title>
       <Sub>
-        Réservez un appel découverte de 30 min (sans engagement) ou écrivez-moi
+        Réservez un appel découverte de 30 min (sans engagement) ou écrivez-nous
         directement.
       </Sub>
 

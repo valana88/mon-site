@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(8px);
   border-bottom: 0.5px solid var(--border);
@@ -53,7 +53,7 @@ export const TopBar = styled.div`
 export const NavContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #ffffffee;
   width: 100%;
@@ -114,6 +114,7 @@ export const Djeeling = styled.span`
   justify-content: center;
   align-items: center;
   color: #212121;
+  letter-spacing: 0.12em;
   font-weight: 700;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;

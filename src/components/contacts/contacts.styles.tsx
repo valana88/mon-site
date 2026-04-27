@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  padding: 5rem 2rem 6rem;
-  max-width: var(--max-width);
-  margin: 0 auto;
+  border: 4px solid green;
+  padding: 2.5rem 2rem;
+  /* max-width: var(--max-width);
+  margin: 0 auto; */
 `;
 
 export const Label = styled.p`

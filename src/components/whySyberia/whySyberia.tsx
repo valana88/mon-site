@@ -1,9 +1,8 @@
+import { SectionCenterLabel } from "../about/about.styles";
 import {
   Grid,
-  Inner,
-  Label,
   Note,
-  Section,
+  SectionWhySerbia,
   StatCard,
   StatLabel,
   stats,
@@ -12,22 +11,22 @@ import {
 
 export default function WhySerbia() {
   return (
-    <Section>
-      <Inner>
-        <Label>Pourquoi la Serbie ?</Label>
-        <Grid>
-          {stats.map((s) => (
-            <StatCard key={s.label}>
-              <StatVal>{s.val}</StatVal>
-              <StatLabel>{s.label}</StatLabel>
-            </StatCard>
-          ))}
-        </Grid>
-        <Note>
-          Candidate officielle à l'UE. Un environnement fiscal parmi les plus
-          favorables d'Europe — encore peu exploité par les francophones.
-        </Note>
-      </Inner>
-    </Section>
+    <SectionWhySerbia>
+      <SectionCenterLabel>Pourquoi la Serbie ?</SectionCenterLabel>
+
+      <Note>
+        {/* Candidate officielle à l'UE.  */}
+        Un environnement fiscal parmi les plus favorables d'Europe.
+      </Note>
+
+      <Grid>
+        {stats.map((s) => (
+          <StatCard key={s.label}>
+            <StatVal>{s.val}</StatVal>
+            <StatLabel>{s.label}</StatLabel>
+          </StatCard>
+        ))}
+      </Grid>
+    </SectionWhySerbia>
   );
 }
