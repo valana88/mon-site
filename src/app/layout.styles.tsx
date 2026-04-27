@@ -70,7 +70,7 @@ export const IconSymbioseLinkContainer = styled(Link as any)`
   }
 `;
 
-export const Researth = styled.span`
+export const Djeeling = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;

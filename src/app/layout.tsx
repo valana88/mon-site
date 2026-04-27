@@ -6,7 +6,7 @@ import {
   TopBar,
   NavContainer,
   IconSymbioseLinkContainer,
-  Researth,
+  Djeeling,
 } from "./layout.styles";
 
 const geistSans = Geist({
@@ -40,7 +40,7 @@ export default function RootLayout({
             <NavContainer>
               <IconSymbioseLinkContainer href="/">
                 {/* <ResearthLogoLayout /> */}
-                <Researth>DJEELING</Researth>
+                <Djeeling>DJEELING</Djeeling>
               </IconSymbioseLinkContainer>
             </NavContainer>
           </TopBar>
